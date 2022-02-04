@@ -47,6 +47,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277FC61A27AD919000D8AF64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5CAC27AC1F8C006F8B6C /* RedditModel.swift */,
+				27BD5CAE27AC1F9F006F8B6C /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		277FC61B27AD919800D8AF64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5CB227AC1FDD006F8B6C /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		277FC61C27AD919F00D8AF64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				277FC62027AD921200D8AF64 /* ViewController */,
+				277FC61F27AD91DE00D8AF64 /* TableViewCell */,
+				277FC61E27AD91D200D8AF64 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		277FC61D27AD91A800D8AF64 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5CAA27AC1F80006F8B6C /* APICaller.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		277FC61E27AD91D200D8AF64 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5C9C27AC1F4B006F8B6C /* Main.storyboard */,
+				27BD5CA127AC1F4E006F8B6C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		277FC61F27AD91DE00D8AF64 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5C9A27AC1F4B006F8B6C /* MainViewController.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		277FC62027AD921200D8AF64 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5CB027AC1FC6006F8B6C /* MainTableViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		277FC62127AD924400D8AF64 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				27BD5C9627AC1F4B006F8B6C /* AppDelegate.swift */,
+				27BD5C9827AC1F4B006F8B6C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		27BD5C8A27AC1F4B006F8B6C = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +135,13 @@
 		27BD5C9527AC1F4B006F8B6C /* AppNationRedditProject */ = {
 			isa = PBXGroup;
 			children = (
-				27BD5C9627AC1F4B006F8B6C /* AppDelegate.swift */,
-				27BD5C9827AC1F4B006F8B6C /* SceneDelegate.swift */,
-				27BD5C9A27AC1F4B006F8B6C /* MainViewController.swift */,
-				27BD5CB027AC1FC6006F8B6C /* MainTableViewCell.swift */,
-				27BD5C9C27AC1F4B006F8B6C /* Main.storyboard */,
+				277FC62127AD924400D8AF64 /* Delegates */,
+				277FC61D27AD91A800D8AF64 /* Service */,
+				277FC61C27AD919F00D8AF64 /* View */,
+				277FC61B27AD919800D8AF64 /* ViewModel */,
+				277FC61A27AD919000D8AF64 /* Model */,
 				27BD5C9F27AC1F4E006F8B6C /* Assets.xcassets */,
-				27BD5CA127AC1F4E006F8B6C /* LaunchScreen.storyboard */,
 				27BD5CA427AC1F4E006F8B6C /* Info.plist */,
-				27BD5CAA27AC1F80006F8B6C /* APICaller.swift */,
-				27BD5CAC27AC1F8C006F8B6C /* RedditModel.swift */,
-				27BD5CAE27AC1F9F006F8B6C /* Constants.swift */,
-				27BD5CB227AC1FDD006F8B6C /* MainViewModel.swift */,
 			);
 			path = AppNationRedditProject;
 			sourceTree = "<group>";
