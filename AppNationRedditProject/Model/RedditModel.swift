@@ -10,16 +10,6 @@
 //
 //   let reddit = try? newJSONDecoder().decode(Reddit.self, from: jsonData)
 
-//
-// To read values from URLs:
-//
-//   let task = URLSession.shared.redditTask(with: url) { reddit, response, error in
-//     if let reddit = reddit {
-//       ...
-//     }
-//   }
-//   task.resume()
-
 import Foundation
 
 

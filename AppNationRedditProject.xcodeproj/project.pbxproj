@@ -94,7 +94,7 @@
 		277FC61F27AD91DE00D8AF64 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				27BD5C9A27AC1F4B006F8B6C /* MainViewController.swift */,
+				27BD5CB027AC1FC6006F8B6C /* MainTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 		277FC62027AD921200D8AF64 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				27BD5CB027AC1FC6006F8B6C /* MainTableViewCell.swift */,
+				27BD5C9A27AC1F4B006F8B6C /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

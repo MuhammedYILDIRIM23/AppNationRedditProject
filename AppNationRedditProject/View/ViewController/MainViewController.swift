@@ -11,13 +11,13 @@ protocol MainViewControllerProtocol {
     func saveDatas(value: [Child])
 }
 
+
+
 final class MainViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
-    
     private lazy var childList: [Child] = []
     lazy var mainViewModel: MainViewModelProtocol = MainViewModel()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
@@ -25,6 +25,7 @@ final class MainViewController: UIViewController {
         mainViewModel.fetchItems()
     }
 }
+
 
 
 extension MainViewController: MainViewControllerProtocol {
@@ -43,16 +44,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return childList.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.tableViewCellIdentifier, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
-//        cell.saveModel(model: childList[indexPath.row])
-        cell.titleLabel.text = childList[indexPath.row].data?.title
-        cell.thumbnailLabel.text = childList[indexPath.row].data?.thumbnail
-        cell.descriptionLabel.text = childList[indexPath.row].data?.selftext
+        cell.showLabels(model: childList[indexPath.row])
+        cell.setConfigureCell(cell: cell)
         return cell
-        
     }
 }
